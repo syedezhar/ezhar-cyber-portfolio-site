@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="glass-nav">
         <div class="nav-container">
             <div class="nav-logo">
                 <span class="logo-text">SYEDEZHAR</span>
@@ -37,63 +48,72 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="particles-container">
-            <canvas id="particles"></canvas>
-        </div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-name">
-                    <span class="name-part">SYED</span>
-                    <span class="name-part">EZHAR</span>
-                </h1>
-                <div class="hero-role">
-                    <span class="typing-text"></span>
-                    <span class="cursor">|</span>
+            <div class="glass-card hero-card">
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="name-part">SYED</span>
+                        <span class="name-part">EZHAR</span>
+                    </h1>
+                    <div class="hero-role">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Bridging Innovation and Impact through IoT & Cybersecurity</p>
+                    <div class="hero-buttons">
+                        <button class="glass-btn primary">View Work</button>
+                        <button class="glass-btn secondary">Contact Me</button>
+                    </div>
                 </div>
-                <p class="hero-description">Bridging Innovation and Impact through IoT & Cybersecurity</p>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
-                <span>Scroll Down</span>
-            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        I'm a passionate 3rd-year Computer Science student with a focus on IoT and cybersecurity. 
-                        I enjoy exploring new technologies, building smart solutions, and constantly improving my skill set. 
-                        With a vision to bridge innovation and impact, I'm currently working on practical projects to 
-                        sharpen my development journey.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Study</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Certificates</span>
+                <div class="glass-card about-card">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I'm a passionate 3rd-year Computer Science student with a focus on IoT and cybersecurity. 
+                            I enjoy exploring new technologies, building smart solutions, and constantly improving my skill set. 
+                            With a vision to bridge innovation and impact, I'm currently working on practical projects to 
+                            sharpen my development journey.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Study</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Certificates</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <div class="image-placeholder">SE</div>
-                        </div>
-                        <div class="profile-info">
-                            <h3>Syed Ezhar</h3>
-                            <p>CSE Student</p>
+                <div class="glass-card profile-card">
+                    <div class="profile-image">
+                        <div class="image-placeholder">SE</div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Syed Ezhar</h3>
+                        <p>CSE Student</p>
+                        <div class="profile-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Innovation</span>
                         </div>
                     </div>
                 </div>
@@ -102,113 +122,164 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects section">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project cards will be dynamically added here -->
-                <div class="project-card placeholder-card">
-                    <div class="project-icon">💻</div>
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔒</div>
+                        <div class="project-status">In Progress</div>
+                    </div>
                     <h3>IoT Security Dashboard</h3>
-                    <p>Real-time monitoring system for IoT device security analysis</p>
+                    <p>Real-time monitoring system for IoT device security analysis with threat detection capabilities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
                     <div class="project-links">
-                        <a href="#" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="glass-btn small">GitHub</a>
+                        <a href="#" class="glass-btn small">Live Demo</a>
                     </div>
                 </div>
-                <div class="project-card placeholder-card">
-                    <div class="project-icon">🔒</div>
+
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛡️</div>
+                        <div class="project-status completed">Completed</div>
+                    </div>
                     <h3>Cyber Threat Analyzer</h3>
-                    <p>Machine learning based threat detection and analysis tool</p>
+                    <p>Machine learning based threat detection and analysis tool for network security monitoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
                     <div class="project-links">
-                        <a href="#" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="glass-btn small">GitHub</a>
+                        <a href="#" class="glass-btn small">Live Demo</a>
                     </div>
                 </div>
-                <div class="project-card placeholder-card">
-                    <div class="project-icon">🌐</div>
+
+                <div class="glass-card project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏠</div>
+                        <div class="project-status">Completed</div>
+                    </div>
                     <h3>Smart Home Controller</h3>
-                    <p>Voice-controlled IoT home automation system</p>
+                    <p>Voice-controlled IoT home automation system with mobile app integration and real-time monitoring.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
                     <div class="project-links">
-                        <a href="#" class="project-link">GitHub</a>
-                        <a href="#" class="project-link">Demo</a>
+                        <a href="#" class="glass-btn small">GitHub</a>
+                        <a href="#" class="glass-btn small">Live Demo</a>
                     </div>
                 </div>
-            </div>
-            <div class="add-project-btn">
-                <button class="btn-primary">+ Add New Project</button>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-content">
-                <div class="skills-category">
+                <div class="glass-card skills-category">
                     <h3>Programming Languages</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">Python</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">C++</span>
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-category">
+
+                <div class="glass-card skills-category">
                     <h3>IoT & Hardware</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">Arduino</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Arduino</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="88%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Raspberry Pi</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Raspberry Pi</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="82%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">MQTT</span>
+                            <div class="skill-info">
+                                <span class="skill-name">MQTT</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="75%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-category">
+
+                <div class="glass-card skills-category">
                     <h3>Cybersecurity</h3>
                     <div class="skill-items">
                         <div class="skill-item">
-                            <span class="skill-name">Network Security</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Network Security</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="85%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Penetration Testing</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Penetration Testing</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="78%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Cryptography</span>
+                            <div class="skill-info">
+                                <span class="skill-name">Cryptography</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-width="80%"></div>
                             </div>
@@ -220,30 +291,34 @@
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="certificates section">
+    <section id="certificates" class="section">
         <div class="container">
             <h2 class="section-title">Certificates & Achievements</h2>
             <div class="certificates-grid">
-                <div class="certificate-card">
+                <div class="glass-card certificate-card">
                     <div class="certificate-icon">🏆</div>
                     <h3>Cybersecurity Fundamentals</h3>
                     <p>Cisco Networking Academy</p>
-                    <button class="view-certificate">View Certificate</button>
+                    <div class="certificate-date">2023</div>
+                    <button class="glass-btn small view-certificate">View Certificate</button>
                 </div>
-                <div class="certificate-card">
+                <div class="glass-card certificate-card">
                     <div class="certificate-icon">🔐</div>
                     <h3>Ethical Hacking Essentials</h3>
                     <p>EC-Council</p>
-                    <button class="view-certificate">View Certificate</button>
+                    <div class="certificate-date">2023</div>
+                    <button class="glass-btn small view-certificate">View Certificate</button>
                 </div>
-                <div class="certificate-card">
+                <div class="glass-card certificate-card">
                     <div class="certificate-icon">🌐</div>
                     <h3>IoT Security Specialist</h3>
                     <p>CompTIA</p>
-                    <button class="view-certificate">View Certificate</button>
+                    <div class="certificate-date">2024</div>
+                    <button class="glass-btn small view-certificate">View Certificate</button>
                 </div>
             </div>
-            <div class="achievements">
+            
+            <div class="glass-card achievements">
                 <h3>Key Achievements</h3>
                 <ul class="achievement-list">
                     <li>Dean's List for Academic Excellence (2023)</li>
@@ -256,37 +331,40 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="section">
         <div class="container">
             <h2 class="section-title">What People Say</h2>
             <div class="testimonials-slider">
-                <div class="testimonial-card active">
+                <div class="glass-card testimonial-card active">
                     <div class="testimonial-content">
                         "Syedezhar demonstrates exceptional problem-solving skills and a deep understanding of cybersecurity principles. His work on IoT security projects is impressive."
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">DJ</div>
                         <div class="author-info">
                             <h4>Dr. Sarah Johnson</h4>
                             <p>Professor, Computer Science</p>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="glass-card testimonial-card">
                     <div class="testimonial-content">
                         "Working with Ezhar on our security assessment project was a great experience. His technical expertise and attention to detail are remarkable."
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
                         <div class="author-info">
                             <h4>Michael Chen</h4>
                             <p>Senior Security Analyst</p>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="glass-card testimonial-card">
                     <div class="testimonial-content">
                         "Ezhar's passion for learning and innovation in IoT security makes him stand out. He's definitely someone to watch in the field."
                     </div>
                     <div class="testimonial-author">
+                        <div class="author-avatar">LR</div>
                         <div class="author-info">
                             <h4>Lisa Rodriguez</h4>
                             <p>IoT Solutions Architect</p>
@@ -303,39 +381,48 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="glass-card contact-info-card">
                     <h3>Let's Connect</h3>
                     <p>Interested in collaborating or discussing opportunities? I'd love to hear from you!</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <a href="mailto:syedezhar33@gmail.com">syedezhar33@gmail.com</a>
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:syedezhar33@gmail.com">syedezhar33@gmail.com</a>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-icon">💼</span>
-                            <a href="https://linkedin.com/in/syed-ezhar" target="_blank">Syed Ezhar</a>
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-text">
+                                <span>LinkedIn</span>
+                                <a href="https://linkedin.com/in/syed-ezhar" target="_blank">Syed Ezhar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
+                
+                <div class="glass-card contact-form-card">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="glass-btn primary full-width">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -343,17 +430,23 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Syedezhar. All rights reserved.</p>
+            <div class="glass-card footer-card">
+                <p>&copy; 2024 Syedezhar. All rights reserved.</p>
+                <p>Built with passion for innovation and security</p>
+            </div>
         </div>
     </footer>
 
     <!-- Certificate Modal -->
     <div id="certificateModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-backdrop"></div>
+        <div class="glass-card modal-content">
             <span class="close">&times;</span>
             <div class="modal-body">
+                <h3>Certificate Preview</h3>
                 <p>Certificate viewing functionality will be implemented here.</p>
                 <p>This will support PDF viewing and download options.</p>
+                <button class="glass-btn primary">Download Certificate</button>
             </div>
         </div>
     </div>
