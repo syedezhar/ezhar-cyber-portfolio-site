@@ -406,43 +406,31 @@ body {
     margin-bottom: 20px;
     text-align: center;
     letter-spacing: 0.1em;
-    perspective: 1000px;
-}
-
-.animated-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.1em;
-}
-
-.name-part {
-    display: inline-block;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    animation: nameWave 2s ease-in-out infinite;
-    animation-delay: var(--delay, 0s);
-    transform-origin: center bottom;
 }
 
-.name-separator {
-    width: 0.5em;
+.floating-name {
+    animation: floatRightToLeft 8s ease-in-out infinite;
+    white-space: nowrap;
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
 }
 
-@keyframes nameWave {
-    0%, 100% {
-        transform: translateY(0px) rotateX(0deg) scale(1);
-        text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+@keyframes floatRightToLeft {
+    0% {
+        transform: translateX(20px);
+        opacity: 0.8;
     }
     50% {
-        transform: translateY(-20px) rotateX(15deg) scale(1.1);
-        text-shadow: 
-            0 0 30px rgba(0, 255, 255, 0.8),
-            0 10px 20px rgba(0, 255, 255, 0.3);
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(20px);
+        opacity: 0.8;
     }
 }
 
